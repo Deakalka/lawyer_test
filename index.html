@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Test_1</title>
+    <title>Lawyer</title>
 </head>
 <body>
+    
     <header class="header">
         <div class="header_div ">
             <nav class="header-navigation"> 
@@ -21,8 +22,8 @@
             <ul class="header-menu  desck">
                 <li class="header-menu-item"><a class="header-link" href="#about">Про компанію</a></li>
                 <li class="header-menu-item"><a class="header-link" href="#services">Послуги</a></li>
-                <li class="header-menu-item"><a class="header-link" href="#price">Ціна</a></li>
-                <li class="header-menu-item"><a class="header-link" href="#rules">Правила спіробітництва</a></li>
+                <!-- <li class="header-menu-item"><a class="header-link" href="#price">Ціна</a></li>
+                <li class="header-menu-item"><a class="header-link" href="#rules">Правила спіробітництва</a></li> -->
                 <li class="header-menu-item"><a class="header-link" href="#contacts">Контакти</a></li>
             </ul>
             </nav>
@@ -62,8 +63,8 @@
                 <ul class="header-menu list ">
                     <li class="header-menu-item"><a class="header-link" href="#about">Про компанію</a></li>
                     <li class="header-menu-item"><a class="header-link" href="#services">Послуги</a></li>
-                    <li class="header-menu-item"><a class="header-link" href="#price">Ціна</a></li>
-                    <li class="header-menu-item"><a class="header-link" href="#rules">Правила спіробітництва</a></li>
+                    <!-- <li class="header-menu-item"><a class="header-link" href="#price">Ціна</a></li>
+                    <li class="header-menu-item"><a class="header-link" href="#rules">Правила спіробітництва</a></li> -->
                     <li class="header-menu-item"><a class="header-link" href="#contacts">Контакти</a></li>
                 </ul>
                 <ul class="adress-lists">
@@ -85,43 +86,62 @@
     </header>
 
     
-    <section class="about_container container" id="about">
-        <!-- <div class="box"> -->
-            <div class="about-text text" > 
-                <h2 class="title">About</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <section class="about_container container section" id="about">
+                <div class="about-text text" > 
+                    <h2 class="title">About</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="gallery">
+                    <div class="item item-1" style="--img: url(./img/photo.png);" data-text="текст"></div>
+                    <div class="item item-2" style="--img: url(./img/photo.png);" data-text="текст"></div>
+                    <div class="item item-3" style="--img: url(./img/photo.png);" data-text="текст"></div>
+                </div>
+                </div>
             </div>
-            <div>
-                <img class="test_img" src="./img/photo.png" alt="" height="300px" width="300px">
-            </div>
-        <!-- </div> -->
+            <h2 class="text-section" >ABOUT</h2>
     </section>
 
-    <section class="services_container container" id="services">
+    <section class="services_container container section" id="services">
     
         <div class="services-text text"> 
             <h2 class="title">Services</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, adipisci!.</p>
-        </div>
-        <div class="services-text-box">
-            <ul class="services-list">
-                <li>            
-                    <h3>Corporate Law</h3>
-                    <p>Providing legal advice to corporations and their management.</p>
-                </li>
-                <li>
-                    <h3>Contact Law</h3>
-                    <p>Drafting, reviewing, and negotiating contracts.</p>
-                </li>
-                <li>
-                    <h3>Employment Law</h3>
-                    <p>Advising on employment laws and regulations.</p>
-                </li>
-            </ul>
-            <img class="test_img ser_img" src="" alt="" height="300px" width="300px">
-        </div>
+        </div>    
+        <ul class="services_price">
+            <li class="item_services item_services-1">
+                Services 1
+                <span> Lorem ipsum dolor sit amet.</span>
+                <p class="item_services_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae tempora necessitatibus, minima voluptatem consequatur! Sit, perspiciatis quibusdam quae corporis nostrum 
+            </p>
+        </li>
+        <li class="item_services item_services-2">
+            Services 2
+            <span> Lorem ipsum dolor sit amet.</span>
+            <p class="item_services_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae tempora necessitatibus, minima voluptatem consequatur! Sit, perspiciatis quibusdam quae corporis nostrum 
+            </p>
+        </li>
+        <li class="item_services item_services-3">
+            Services 3
+            <span> Lorem ipsum dolor sit amet.</span>
+            <p class="item_services_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae tempora necessitatibus, minima voluptatem consequatur! Sit, perspiciatis quibusdam quae corporis nostrum 
+            </p>
+        </li>
+        <li class="item_services item_services-4">
+            Services 4
+            <span> Lorem ipsum dolor sit amet.</span>
+            <p class="item_services_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae tempora necessitatibus, minima voluptatem consequatur! Sit, perspiciatis quibusdam quae corporis nostrum 
+            </p>
+        </li>
+    </ul>
+    <h2 class="text-section-second" >Services & Price</h2>
+    
+    
     </section>
-
+<!-- 
     <section class="price_container container" id="price">
         <div class="price-text"> 
             <h2 class="title">Price</h2>
@@ -174,10 +194,10 @@
             </ul>
             <img class="test_img ser_img" src="" alt="" height="300px" width="300px">
         </div>
-    </section>
+    </section> -->
 
       
-    <footer class="contacts_container container" id="contacts">
+    <footer class="contacts_container container section"   id="contacts">
         <div class="footer">
             <div class="footer-text-box">
                 <ul class="social-links-footer">
@@ -209,9 +229,9 @@
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513.7657440718809!2d21.02257494073913!3d52.22711610468483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf08196eabd%3A0x18ee96bfa292acfc!2sOkr%C4%99gowa%20Rada%20Adwokacka!5e0!3m2!1suk!2sua!4v1704986931422!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
-    <!-- <script src="map.js"></script> -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=9bbbf9e3bf95171f&callback=initMap" async defer></script> -->
+
     <script src="mobile_menu.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html>
 
