@@ -464,6 +464,15 @@ span{
     color: #e7e9fc;
     font-size: 24px;
 }
+.services_price .item_services-10, .item_services-12 {
+    /* transform: translateX(370px); */
+    /* transform: translatey(20px); */
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+
+}
+
 @media screen and (min-width: 768px){
 
 
@@ -526,7 +535,7 @@ span{
     color: #fff;
     padding: 10px 10px 10px 14px;
     letter-spacing: 4px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     transform: translateY(60px);
     opacity: 0;
     transition: all 400ms;
@@ -655,6 +664,45 @@ span{
     .services_price:has(.item_services-4:hover) {
         grid-template-columns: 1fr 2fr ;
     }
+    .services_price:has(.item_services-5:hover) {
+        grid-template-columns: 2fr 1fr ;
+    }
+    
+    .services_price:has(.item_services-6:hover) {
+        grid-template-columns: 1fr 2fr ;
+    }
+    .services_price:has(.item_services-7:hover) {
+        grid-template-columns: 2fr 1fr ;
+    }
+    
+    .services_price:has(.item_services-8:hover) {
+        grid-template-columns: 1fr 2fr ;
+    }
+    .services_price:has(.item_services-9:hover) {
+        grid-template-columns: 2fr 1fr ;
+    }
+    .services_price:has(.item_services-10:hover) {
+        grid-template-columns: 1fr 1fr ;
+    }
+    .services_price:has(.item_services-11:hover) {
+        grid-template-columns: 1fr 2fr ;
+    }
+    .services_price:has(.item_services-12:hover) {
+        grid-template-columns: 1fr 1fr ;
+    }
+    .item_services:hover{
+    height: min-content;
+    }
+    .services_price .item_services-10, .item_services-12 {
+        /* transform: translateX(370px); */
+        /* transform: translatey(20px); */
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+
+    }
+
+      
     .text-section{
         font-size: 190px;
         position: absolute;
@@ -676,8 +724,10 @@ span{
     .message{
         width: 250px;
     }
-    .item_services-5{
-        transform: translateX(180px);
+    .item_services{
+    }
+    .services_container{
+        height: 960px;
     }
 }
 @media screen and (min-width: 1158px){
@@ -751,7 +801,7 @@ span{
 
     /* SERVICES */
     .services_container{
-        padding-bottom:7rem;
+        padding-bottom:10rem;
     }
     .services-list{
         justify-content: space-between;
@@ -779,13 +829,13 @@ span{
         width: 1090px;
         /* height: 260px; */
     }
-    .item_services:nth-child(odd) {
+    /* .item_services:nth-child(odd) {
         transform: translateY(-20px);
     }
     
     .item_services:nth-child(even) {
         transform: translateY(20px);
-    }
+    } */
     .services_price:has(.item_services-1:hover) {
         grid-template-columns: 2fr 1fr 1fr;
     }
@@ -801,11 +851,50 @@ span{
     .services_price:has(.item_services-4:hover) {
         grid-template-columns:  2fr 1fr  1fr ;
     }
-    .services_price .item_services-5{
-        transform: translateX(160px);
-        transform: translatey(20px);
+        
+    .services_price:has(.item_services-5:hover) {
+        grid-template-columns: 1fr 2fr 1fr ;
+    }
+    
+    .services_price:has(.item_services-6:hover) {
+        grid-template-columns:  1fr 1fr  2fr ;
+    }
+        
+    .services_price:has(.item_services-7:hover) {
+        grid-template-columns: 2fr 1fr 1fr ;
+    }
+    
+    .services_price:has(.item_services-8:hover) {
+        grid-template-columns:  1fr 2fr  1fr ;
+    }
+        
+    .services_price:has(.item_services-9:hover) {
+        grid-template-columns: 1fr 1fr 2fr ;
+    }
+    
+    .services_price:has(.item_services-10:hover) {
+        grid-template-columns: 2fr 1fr 1fr ;
+    }
+    
+    .services_price:has(.item_services-11:hover) {
+        grid-template-columns:  1fr 2fr  1fr ;
+    }
+    
+    .services_price:has(.item_services-12:hover) {
+        grid-template-columns: 1fr 1fr 2fr ;
+    }
+    
+    .services_price .item_services-10, .item_services-12 {
+        /* transform: translateX(370px); */
+        /* transform: translatey(20px); */
+        opacity: 0;
+        visibility: hidden;
 
     }
+    /* .item_services:nth-child(2n+1){
+        transform: translateX(160px);
+        transform: translatey(20px);   
+    } */
     .item_services span{
 
         top: 50px;
