@@ -7,13 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
         sections.forEach((section, index) => {
             setTimeout(() => {
                 section.classList.add("show");
-            }, index * 500); // Затримка кожної секції на 500 мілісекунд
+            }, index * 500); 
         });
     }
 
     fadeInSections();
 
-    // Ваш код для з'явлення text та textSecond після завершення анімації секцій
     setTimeout(() => {
         text.classList.add("show");
         textSecond.classList.add("show");

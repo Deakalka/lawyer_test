@@ -201,6 +201,27 @@
         </div>
     </footer>
 
+    <button id="openModalBtn">Зворотній зв'язок</button>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Зворотній зв'язок</h2>
+            <form id="feedbackForm">
+                <label for="name">Ім'я:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Повідомлення:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button class="modal_btn" type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+    
+
+    
+    <script src="form.js"></script>
     <script src="mobile_menu.js"></script>
     <script src="gallery.js"></script>
 </body>
